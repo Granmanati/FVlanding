@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --brand-dark: #013b51;
+    --brand-light: #015c7e;
+    --whatsapp: #25D366;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        @apply bg-white text-slate-900 font-sans;
+    }
+}
+
+@layer components {
+    .glass-header {
+        @apply bg-white/70 backdrop-blur-xl border-b border-slate-200/50 shadow-sm transition-all duration-500;
+    }
+
+    .premium-shadow {
+        box-shadow: 0 10px 30px -10px rgba(1, 59, 81, 0.1), 0 4px 10px -5px rgba(1, 59, 81, 0.05);
+    }
+
+    .premium-shadow-xl {
+        box-shadow: 0 30px 60px -15px rgba(1, 59, 81, 0.15), 0 10px 30px -10px rgba(1, 59, 81, 0.1);
+    }
+
+    .btn-premium {
+        @apply px-10 py-5 rounded-2xl font-bold tracking-tight transition-all duration-300 active:scale-95;
+    }
+
+    .text-balance {
+        text-wrap: balance;
+    }
+}
