@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Menu, X, MapPin, Calendar,
-    MessageCircle, Heart, CheckCircle2,
-    Instagram, ChevronDown, Activity,
-    Shield, Send, Trophy, Info
+    Menu, X, MessageCircle, CheckCircle2,
+    Instagram, Activity, Shield, Send, Info
 } from 'lucide-react';
 
 const WA_NUMBER = "34675982253";
@@ -22,8 +20,6 @@ const Badge = ({ children }: { children: React.ReactNode }) => (
 export default function App() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [activeFaq, setActiveFaq] = useState<number | null>(null);
-
     // Chatbot State v2.0
     const [chatOpen, setChatOpen] = useState(false);
     const [chatStep, setChatStep] = useState(0);
